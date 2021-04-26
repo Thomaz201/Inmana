@@ -1,6 +1,6 @@
 defmodule Inmana.Supplies.ExpirationNotification do
-  alias Inmana.Supplies.{ExpirationEmail, GetByExpiration}
   alias Inmana.Mailer
+  alias Inmana.Supplies.{ExpirationEmail, GetByExpiration}
 
   def send do
     data = GetByExpiration.call()
